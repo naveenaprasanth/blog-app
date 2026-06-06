@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Home</title>
+</head>
+<body>
+
+<h1>Blog Application</h1>
+<h2>All Posts</h2>
+
+{% for post in posts %}
+
+<hr>
+
+<h3>{{ post.title }}</h3>
+
+<p>{{ post.content }}</p>
+
+{% endfor %}
+
+</body>
+</html>
